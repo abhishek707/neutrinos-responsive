@@ -1,0 +1,24 @@
+<div fxLayout="column wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+  <mat-card style="margin-top: 50px">
+    <mat-card-content align="center">
+      <form [formGroup]="sampleform">
+        <div fxLayout="column wrap" fxLayoutAlign="start none" [fxShow]="true" [fxHide]="false">
+          <div style="margin-bottom: 30px">
+            Fetch Countries</div>
+          <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;">
+            <mat-select formControlName="selectt" placeholder="Select Continent" [(ngModel)]="sel" [required]="false">
+              <ng-template ngFor let-option [ngForOf]="continent" let-i="index">
+                <mat-option [value]="option">{{option}}</mat-option>
+              </ng-template>
+            </mat-select>
+
+          </mat-form-field>
+          <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button (click)="submit()">Submit</button><button mat-raised-button (click)="refresh()">Refresh</button></div>
+        </div>
+      </form>
+      <div fxLayout="column wrap" style="margin-top : 30px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <bh-countries [receivedtabledata]="filterdata" *ngIf="childview"></bh-countries>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

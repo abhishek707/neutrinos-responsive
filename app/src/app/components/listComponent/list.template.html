@@ -1,0 +1,28 @@
+<div fxLayout="row " fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <mat-card>
+        <mat-card-content align="center" class="card">
+          <form [formGroup]="sampleform">
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3 class="card-text">
+                Fetch Countries</h3>
+              <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;">
+                <mat-select formControlName="selectt" placeholder="Select" [(ngModel)]="sel" [required]="false">
+                  <ng-template ngFor let-option [ngForOf]="country" let-i="index">
+                    <mat-option [value]="option">{{option}}</mat-option>
+                  </ng-template>
+                </mat-select>
+
+              </mat-form-field>
+              <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button color="primary" (click)="onclickk()">Submit</button><button mat-raised-button color="accent" (click)="refresh()">Refesh</button></div>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div fxLayout="column wrap" class="table" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <bh-details [receivedtabledata]="filterdata" *ngIf="childview"></bh-details>
+    </div>
+  </div>
+</div>

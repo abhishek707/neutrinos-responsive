@@ -1,0 +1,181 @@
+[
+    {
+        "id": "SSD_SERVICE_ID_sd_ezVFoqcetCrcwZjz",
+        "type": "tab",
+        "createdDate": "2021-03-29T12:42:17.502Z",
+        "relativeParentPath": "",
+        "label": "server_countries",
+        "disabled": false,
+        "info": "",
+        "generateNext": true,
+        "serviceName": "server_countries"
+    },
+    {
+        "id": "sd_ck4ZvxXTfXhaLCig",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_ezVFoqcetCrcwZjz",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "/countries",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "httpOptions": {
+            "/countries": {
+                "get": {
+                    "summary": "",
+                    "description": "",
+                    "consumes": [],
+                    "produces": [],
+                    "parameters": [],
+                    "responses": {}
+                }
+            }
+        },
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "category": "HTTP",
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "sd_A4Nb7KjpA1ZNywwH"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "server_countries",
+        "functionName": "sd_ck4ZvxXTfXhaLCig"
+    },
+    {
+        "id": "sd_TAcVDwKyeiV45jGd",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_ezVFoqcetCrcwZjz",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "result",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.result",
+            "send": "bh.local.result"
+        },
+        "inputs": 1,
+        "outputs": 0,
+        "editableListData": {
+            "headers": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_TAcVDwKyeiV45jGd",
+        "category": "HTTP",
+        "__n_excludedFromValidation__": {},
+        "x": 520,
+        "y": 140,
+        "wires": [],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_A4Nb7KjpA1ZNywwH",
+        "type": "HttpRequest",
+        "z": "SSD_SERVICE_ID_sd_ezVFoqcetCrcwZjz",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlValue": "https://api.first.org/data/v1/countries",
+        "urlMappingObj": {},
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "useAuthTypeMappingObj": {},
+        "useAuthUsername": "",
+        "useAuthUsernameMappingObj": "",
+        "useAuthPassword": "",
+        "useAuthPasswordMappingObj": "",
+        "useAuthToken": "",
+        "useAuthTokenMappingObj": "",
+        "tls": "",
+        "followRedirect": true,
+        "paytoqs": false,
+        "useAuthentication": false,
+        "rejectUnauthorized": false,
+        "proxy": "",
+        "useProxy": false,
+        "usetls": false,
+        "cookiesMapObj": {},
+        "cookiesList": {},
+        "switchStates": {
+            "cookies": "Map"
+        },
+        "editableListData": {},
+        "timeout": {
+            "type": "num",
+            "value": ""
+        },
+        "functionName": "sd_A4Nb7KjpA1ZNywwH",
+        "category": "HTTP",
+        "__n_excludedFromValidation__": {},
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "sd_TAcVDwKyeiV45jGd"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    }
+]

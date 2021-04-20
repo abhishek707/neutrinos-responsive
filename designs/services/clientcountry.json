@@ -1,0 +1,87 @@
+[
+    {
+        "id": "sd_ZuAwyMVsaazuh1cN",
+        "type": "tab",
+        "createdDate": "2021-03-25T19:25:04.751Z",
+        "relativeParentPath": "",
+        "label": "clientcountry",
+        "disabled": false,
+        "info": "",
+        "generateNext": true,
+        "serviceName": "clientcountry"
+    },
+    {
+        "id": "sd_Y42tfupNprDVMDTS",
+        "type": "Start",
+        "z": "sd_ZuAwyMVsaazuh1cN",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "getcountries",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "list",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "getcountries",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 200,
+        "y": 100,
+        "wires": [
+            [
+                "sd_lZhlHwc6m5We2MPU"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "clientcountry"
+    },
+    {
+        "id": "sd_lZhlHwc6m5We2MPU",
+        "type": "CallSSDApi",
+        "z": "sd_ZuAwyMVsaazuh1cN",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlValue": "/countries",
+        "url": "/countries",
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.list",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "list"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "inputVariables": [],
+        "inputParams": [],
+        "functionName": "sd_lZhlHwc6m5We2MPU",
+        "category": "HTTP",
+        "__n_excludedFromValidation__": {},
+        "x": 360,
+        "y": 80,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    }
+]

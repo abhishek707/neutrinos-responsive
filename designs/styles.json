@@ -1,0 +1,26 @@
+{
+    "classes": [
+        "image-all",
+        "class1",
+        "class2",
+        "header",
+        "gap",
+        "gap-top",
+        "gap-big",
+        "image-width",
+        "banner",
+        "p-t-b-20",
+        "min-h-400",
+        "full-height",
+        "card",
+        "card-text",
+        "table",
+        "mat-row",
+        "tablet",
+        "overflow",
+        "banner-media",
+        "image-123",
+        "mar-mob",
+        "font-box"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "appPageId": "976ddc99-79bb-00bb-7dc4-8edc120c161c",
+    "appPageName": "countries",
+    "componentName": "countriesComponent",
+    "selectorName": "bh-countries",
+    "htmlFileName": "countries.template.html",
+    "tsFileName": "countries.component.ts",
+    "createDate": "2021-03-29T12:48:32.853Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

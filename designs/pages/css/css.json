@@ -1,0 +1,14 @@
+{
+    "appPageId": "e5356c03-7c2a-9c0c-b783-2ed141709b72",
+    "appPageName": "css",
+    "componentName": "cssComponent",
+    "selectorName": "bh-css",
+    "htmlFileName": "css.template.html",
+    "tsFileName": "css.component.ts",
+    "createDate": "2021-04-14T05:38:38.321Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

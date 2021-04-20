@@ -1,0 +1,26 @@
+{
+    "routes": [
+        {
+            "path": "list",
+            "component": "listComponent"
+        },
+        {
+            "path": "home",
+            "component": "homeComponent"
+        },
+        {
+            "path": "css",
+            "component": "cssComponent"
+        },
+        {
+            "path": "''",
+            "redirectTo": "css",
+            "pathMatch": "full",
+            "default": true
+        },
+        {
+            "path": "**",
+            "component": "PageNotFoundComponent"
+        }
+    ]
+}

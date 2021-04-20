@@ -1,0 +1,14 @@
+{
+    "appPageId": "718dd1b5-061d-7868-7f15-def082616240",
+    "appPageName": "resPage",
+    "componentName": "respageComponent",
+    "selectorName": "bh-respage",
+    "htmlFileName": "respage.template.html",
+    "tsFileName": "respage.component.ts",
+    "createDate": "2021-04-20T12:22:53.974Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

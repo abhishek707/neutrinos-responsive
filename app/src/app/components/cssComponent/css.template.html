@@ -1,0 +1,138 @@
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" style="background-color: grey; width:100%;padding: 15px;" class="style-1" fxLayoutGap="20px" fxLayoutAlign="end center" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <mat-icon style="height : 30px;" fxFlexAlign="center">home</mat-icon>
+      </div>
+      <div fxLayout="column " fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxFlexAlign="center" style="height : 30px;">
+          <a href="#">My Accounts</a>
+        </div>
+      </div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <mat-form-field style=" font-size: 6px;" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput placeholder="Enter Search Terms" [required]="false" fxFlexAlign="center">
+
+        </mat-form-field>
+      </div>
+    </div>
+    <div fxLayout="row " fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="row wrap" style="padding: 20px; width:100%" fxLayoutAlign="space-between space-between" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+          <div>
+            A Very Very Big Title</div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="end center" [fxShow]="true" [fxHide]="false" fxShow.xs="false" fxHide.xs="true">
+          <div>
+            <a href="#">Home</a>
+          </div>
+          <div>
+            <a href="#">Event</a>
+          </div>
+          <div>
+            <a href="#">Accessories</a>
+          </div>
+          <div>
+            <a href="#">Account</a>
+          </div>
+          <div>
+            <a href="#">Featured Items</a>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="false" [fxHide]="true" fxShow.xs="true" fxHide.xs="false">
+        <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;">
+          <mat-select class="font-box" placeholder="Select" [required]="false">
+            <ng-template ngFor let-option [ngForOf]="dataset" let-i="index">
+              <mat-option [value]="option">{{option}}</mat-option>
+            </ng-template>
+          </mat-select>
+
+        </mat-form-field>
+      </div>
+    </div>
+    <div fxLayout="row wrap" class="banner-media banner" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="/Web/Icons/images/bw.jpg" class="full-height image-width"></div>
+    <div fxLayout="row wrap" class="p-t-b-20" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div>
+          <h3>Intro Copy Headline</h3>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolor veniam. Deleniti officia repudiandae possimus doloremque nobis placeat ipsa! Ut cupiditate doloremque temporibus vel, repudiandae nihil officiis ipsam tempora quidem ea eius dicta itaque dolor. Magnam sed fuga quis vel.</p>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="row wrap" class="tablet min-h-400" fxLayoutGap="2" fxLayoutAlign="space-between stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" fxFlex="22" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxFlex.xs="48"><img imgSrc="/Web/Icons/images/thumb-1.jpg" class="image-width">
+        <div>
+          <p style="margin=0">Item Title</p>
+          <p style="margin=0">Item Categaory</p>
+          <p style="margin=0">$68.00</p>
+        </div>
+      </div>
+      <div fxLayout="column wrap" fxFlex="22" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxFlex.xs="48"><img imgSrc="/Web/Icons/images/thumb-1.jpg" class="image-width">
+        <div class="gap">
+          Item Title</div>
+        <div class="gap">
+          Item Categaory</div>
+        <div class="gap">
+          $68.00</div>
+      </div>
+      <div fxLayout="column wrap" fxFlex="22" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxFlex.xs="48"><img imgSrc="/Web/Icons/images/thumb-1.jpg" class="image-width">
+        <div class="gap">
+          Item Title</div>
+        <div class="gap">
+          Item Categaory</div>
+        <div class="gap">
+          $68.00</div>
+      </div>
+      <div fxLayout="column wrap" fxFlex="22" fxLayoutAlign="start none" [fxShow]="true" [fxHide]="false" fxFlex.xs="48"><img imgSrc="/Web/Icons/images/thumb-1.jpg" class="image-width">
+        <div class="gap">
+          Item Title</div>
+        <div class="gap">
+          Item Categaory</div>
+        <div class="gap">
+          $68.00</div>
+      </div>
+    </div>
+    <div fxLayout="row wrap" style="background-color:grey; " fxLayoutAlign="space-between stretch" [fxShow]="true" [fxHide]="false" fxLayout.xs="column" fxLayoutAlign.xs="center" fxLayoutGap.xs="5px">
+      <div fxLayout="column wrap" fxFlex="30" fxLayoutGap="3.3" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div>
+          <h3> Quick Links </h3>
+        </div>
+        <div class="mar-mob">
+          <a href="#">Home</a>
+        </div>
+        <div class="mar-mob">
+          <a href="#">Event</a>
+        </div>
+        <div class="mar-mob">
+          <a href="#">Support</a>
+        </div>
+        <div class="mar-mob">
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div fxLayout="column wrap" fxFlex="30" fxLayoutGap="3.3" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div class="overflow">
+          <h2> Announcements</h2>
+        </div>
+        <div class="overflow">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt similique doloribus animi unde velit dolore minima distinctio eum maiores, consequuntur fugiat, quia eos esse suscipit magnam quis in quos ratione. In repellendus ipsam sapiente maiores eum dolorem deserunt veniam architecto corrupti eaque aperiam dicta, quia aspernatur, sequi debitis laudantium ea.</p>
+        </div>
+      </div>
+      <div fxLayout="column wrap" fxFlex="30" fxLayoutGap="3.3" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div>
+          <h2> Comming Soon </h2>
+        </div><img imgSrc="/Web/Icons/images/thumb-2.jpg" class="image-all image-123">
+      </div>
+    </div>
+    <footer>
+      <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+        <div>
+          <p>&#xA9; 2020 All rights reserved&#xAE; Support@ActualRights.com</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

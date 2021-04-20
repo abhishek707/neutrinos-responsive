@@ -1,0 +1,32 @@
+{
+    "6ccf17ce-edb7-fbd9-9d54-c20e9875cd03": {
+        "appPageName": "list",
+        "componentName": "listComponent",
+        "createDate": "2021-03-25T19:46:34.403Z"
+    },
+    "697b3745-9e4c-48e1-50af-bf719a05dcbd": {
+        "appPageName": "details",
+        "componentName": "detailsComponent",
+        "createDate": "2021-03-26T05:35:47.865Z"
+    },
+    "20436725-4ca4-31b7-b5d0-3775646422aa": {
+        "appPageName": "home",
+        "componentName": "homeComponent",
+        "createDate": "2021-03-29T10:49:40.087Z"
+    },
+    "976ddc99-79bb-00bb-7dc4-8edc120c161c": {
+        "appPageName": "countries",
+        "componentName": "countriesComponent",
+        "createDate": "2021-03-29T12:48:32.853Z"
+    },
+    "e5356c03-7c2a-9c0c-b783-2ed141709b72": {
+        "appPageName": "css",
+        "componentName": "cssComponent",
+        "createDate": "2021-04-14T05:38:38.321Z"
+    },
+    "718dd1b5-061d-7868-7f15-def082616240": {
+        "appPageName": "resPage",
+        "componentName": "respageComponent",
+        "createDate": "2021-04-20T12:22:53.974Z"
+    }
+}

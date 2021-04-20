@@ -1,0 +1,119 @@
+[
+    {
+        "id": "sd_WPek2Alk617zAoOw",
+        "type": "tab",
+        "createdDate": "2021-03-29T12:45:21.617Z",
+        "relativeParentPath": "",
+        "label": "client_country",
+        "disabled": false,
+        "info": "",
+        "generateNext": true,
+        "serviceName": "client_country"
+    },
+    {
+        "id": "sd_gB2lkaLVVmmM2dGk",
+        "type": "Start",
+        "z": "sd_WPek2Alk617zAoOw",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "get_c",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "get_c",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "sd_4muA17vNG8EImMQL"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "client_country"
+    },
+    {
+        "id": "sd_4muA17vNG8EImMQL",
+        "type": "CallSSDApi",
+        "z": "sd_WPek2Alk617zAoOw",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMapping": "",
+        "methodMappingObj": {},
+        "urlValue": "/countries",
+        "url": "/countries",
+        "ret": "json",
+        "retMapping": "",
+        "retMappingObj": {},
+        "reqBody": "",
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMapping": "",
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMapping": "",
+        "paramMappingObj": {},
+        "inputVariables": [],
+        "inputParams": [],
+        "functionName": "sd_4muA17vNG8EImMQL",
+        "category": "HTTP",
+        "__n_excludedFromValidation__": {},
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "sd_GmikG14afTWm0SGf"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_GmikG14afTWm0SGf",
+        "type": "Log",
+        "z": "sd_WPek2Alk617zAoOw",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "bh.local.result",
+        "functionName": "sd_GmikG14afTWm0SGf",
+        "category": "General",
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "bh.local",
+                "value": "result",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "x": 480,
+        "y": 160,
+        "wires": [],
+        "generateNext": false,
+        "generated": true
+    }
+]
